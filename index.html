@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskFlow · Tablero de tareas</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <header class="topbar" id="topbar" hidden>
+      <div class="topbar__brand">
+        <span class="topbar__logo">TF</span>
+        <span>TaskFlow</span>
+      </div>
+      <nav class="topbar__nav">
+        <a href="#/projects" data-nav="projects">Proyectos</a>
+      </nav>
+      <div class="topbar__user">
+        <span id="user-name"></span>
+        <button id="logout-btn" class="btn btn--ghost" type="button">Salir</button>
+      </div>
+    </header>
+
+    <main id="app" class="app"></main>
+
+    <template id="tpl-task-card">
+      <article class="card" draggable="true">
+        <header class="card__header">
+          <h3 class="card__title"></h3>
+          <div class="card__actions">
+            <button class="icon-btn" data-action="edit" title="Editar tarea" type="button">✎</button>
+            <button class="icon-btn" data-action="delete" title="Eliminar tarea" type="button">🗑</button>
+          </div>
+        </header>
+        <p class="card__description"></p>
+        <footer class="card__footer">
+          <label class="card__move-label">
+            Mover a
+            <select class="card__move-select" data-action="move">
+              <option value="TODO">Por hacer</option>
+              <option value="IN_PROGRESS">En progreso</option>
+              <option value="DONE">Hecho</option>
+            </select>
+          </label>
+        </footer>
+      </article>
+    </template>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
