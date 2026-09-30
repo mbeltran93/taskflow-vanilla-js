@@ -1,0 +1,22 @@
+{
+  "name": "taskflow-vanilla-js",
+  "version": "1.0.0",
+  "description": "Tablero de tareas/proyectos estilo Kanban construido con JavaScript vanilla (sin frameworks).",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "json-server --watch db.json --port 3001",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": ["vanilla-js", "kanban", "portfolio", "json-server"],
+  "author": "mbeltran93",
+  "license": "MIT",
+  "devDependencies": {
+    "json-server": "^0.17.4",
+    "vite": "^5.4.10",
+    "vitest": "^2.1.4"
+  }
+}

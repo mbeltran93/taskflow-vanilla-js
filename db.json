@@ -1,0 +1,102 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Mariana Beltran",
+      "email": "mariana@taskflow.dev",
+      "password": "demo1234"
+    },
+    {
+      "id": "u2",
+      "name": "Diego Ramirez",
+      "email": "diego@taskflow.dev",
+      "password": "demo1234"
+    }
+  ],
+  "projects": [
+    {
+      "id": "p1",
+      "name": "Rediseño de la web",
+      "description": "Actualizar el sitio publico con el nuevo branding.",
+      "ownerId": "u1"
+    },
+    {
+      "id": "p2",
+      "name": "App movil v2",
+      "description": "Migrar la app movil a la nueva arquitectura.",
+      "ownerId": "u1"
+    },
+    {
+      "id": "p3",
+      "name": "Infraestructura",
+      "description": "Tareas de mantenimiento de servidores y CI/CD.",
+      "ownerId": "u2"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t1",
+      "projectId": "p1",
+      "title": "Definir paleta de colores",
+      "description": "Elegir los colores primarios y secundarios del nuevo branding.",
+      "status": "DONE",
+      "createdAt": "2026-08-01T10:00:00.000Z"
+    },
+    {
+      "id": "t2",
+      "projectId": "p1",
+      "title": "Maquetar la home",
+      "description": "Convertir el diseño de Figma en HTML/CSS.",
+      "status": "IN_PROGRESS",
+      "createdAt": "2026-08-03T10:00:00.000Z"
+    },
+    {
+      "id": "t3",
+      "projectId": "p1",
+      "title": "Revisar accesibilidad",
+      "description": "Auditar contraste y navegacion por teclado.",
+      "status": "TODO",
+      "createdAt": "2026-08-05T10:00:00.000Z"
+    },
+    {
+      "id": "t4",
+      "projectId": "p1",
+      "title": "Optimizar imagenes",
+      "description": "Comprimir y convertir a WebP los assets de la home.",
+      "status": "TODO",
+      "createdAt": "2026-08-06T10:00:00.000Z"
+    },
+    {
+      "id": "t5",
+      "projectId": "p2",
+      "title": "Migrar autenticacion",
+      "description": "Pasar el login a OAuth2.",
+      "status": "IN_PROGRESS",
+      "createdAt": "2026-08-10T10:00:00.000Z"
+    },
+    {
+      "id": "t6",
+      "projectId": "p2",
+      "title": "Actualizar dependencias nativas",
+      "description": "Subir de version las libs de camara y notificaciones.",
+      "status": "TODO",
+      "createdAt": "2026-08-11T10:00:00.000Z"
+    },
+    {
+      "id": "t7",
+      "projectId": "p3",
+      "title": "Configurar pipeline de CI",
+      "description": "Agregar tests automaticos en cada pull request.",
+      "status": "DONE",
+      "createdAt": "2026-08-12T10:00:00.000Z"
+    },
+    {
+      "id": "t8",
+      "projectId": "p3",
+      "title": "Renovar certificados SSL",
+      "description": "Los certificados vencen a fin de mes.",
+      "status": "TODO",
+      "createdAt": "2026-08-13T10:00:00.000Z"
+    }
+  ]
+}
