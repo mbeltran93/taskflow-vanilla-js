@@ -61,6 +61,15 @@ a {
   z-index: 10;
 }
 
+/* El atributo/propiedad `hidden` del DOM (ver main.js) no alcanza a ocultar
+   el topbar porque `display: flex` arriba tiene el mismo peso en la cascada
+   que el `display: none` del navegador para `[hidden]`; sin esta regla el
+   topbar (con el nombre de usuario y el boton de salir) sigue visible aun
+   despues del logout. */
+.topbar[hidden] {
+  display: none;
+}
+
 .topbar__brand {
   display: flex;
   align-items: center;
