@@ -1,5 +1,7 @@
 # TaskFlow · Vanilla JS
 
+[![CI](https://github.com/mbeltran93/taskflow-vanilla-js/actions/workflows/ci.yml/badge.svg)](https://github.com/mbeltran93/taskflow-vanilla-js/actions/workflows/ci.yml)
+
 Tablero de tareas y proyectos estilo **Kanban** (parecido a una version reducida de Trello/Jira), construido con **HTML, CSS y JavaScript puro** — sin React, sin Vue, sin Angular, sin jQuery.
 
 Este repo es parte de un portafolio con el mismo dominio implementado en distintas tecnologias. Aca el objetivo es mostrar dominio solido de **JavaScript y DOM nativos**: manipulacion directa del DOM, `fetch`, modulos ES, un router hecho a mano basado en `location.hash`, y la API nativa de **HTML5 Drag and Drop**.
